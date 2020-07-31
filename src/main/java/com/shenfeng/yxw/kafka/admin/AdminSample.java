@@ -15,8 +15,35 @@ import java.util.*;
  */
 public class AdminSample {
 
-    public static final String TOPOC_NAME = "yxw-topic2";
+    public static final String TOPOC_NAME = "yxw-top2";
     public static final String BROKER_LIST = "192.168.1.71:9092";
+    public static void main(String[] args) throws Exception {
+//        AdminClient adminClient = AdminSample.adminClient();
+//        System.out.println("adminClient: " + adminClient);
+//
+        // 创建topic实例
+        // createTopic();
+
+        // 删除
+        // deleteTopic();
+
+        // 打印topic
+         topicLists();
+
+        // 描述topic
+       // describeTopic();
+
+
+        // 修改config
+//        alterConfig();
+
+        // 查看config
+//        describeConfig();
+
+        // 增加partitions
+        //   incrPartitions(2);
+    }
+
 
     public static AdminClient adminClient() {
         Properties properties = new Properties();
@@ -175,32 +202,7 @@ public class AdminSample {
     }
 
 
-    public static void main(String[] args) throws Exception {
-//        AdminClient adminClient = AdminSample.adminClient();
-//        System.out.println("adminClient: " + adminClient);
-//
-        // 创建topic实例
-        // createTopic();
 
-        // 删除
-        // deleteTopic();
-
-        // 打印topic
-        // topicLists();
-
-        // 描述topic
-        describeTopic();
-
-
-        // 修改config
-//        alterConfig();
-
-        // 查看config
-//        describeConfig();
-
-        // 增加partitions
-     //   incrPartitions(2);
-    }
 
 
 }
